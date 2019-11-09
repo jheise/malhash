@@ -1,3 +1,4 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/jheise/malhash)](https://goreportcard.com/report/github.com/jheise/malhash) 
 # malhash
 ---
 

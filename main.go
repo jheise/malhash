@@ -50,8 +50,8 @@ func _grabMD5(filepath string) (string, error) {
 	if _, err := io.Copy(hash, f); err != nil {
 		return "", err
 	}
-	hash_in_bytes := hash.Sum(nil)
-	return hex.EncodeToString(hash_in_bytes), nil
+	hashInBytes := hash.Sum(nil)
+	return hex.EncodeToString(hashInBytes), nil
 }
 
 func _grabSHA1(filepath string) (string, error) {
@@ -65,8 +65,8 @@ func _grabSHA1(filepath string) (string, error) {
 	if _, err := io.Copy(hash, f); err != nil {
 		return "", err
 	}
-	hash_in_bytes := hash.Sum(nil)
-	return hex.EncodeToString(hash_in_bytes), nil
+	hashInBytes := hash.Sum(nil)
+	return hex.EncodeToString(hashInBytes), nil
 }
 
 func _grabSHA256(filepath string) (string, error) {
@@ -80,8 +80,8 @@ func _grabSHA256(filepath string) (string, error) {
 	if _, err := io.Copy(hash, f); err != nil {
 		return "", err
 	}
-	hash_in_bytes := hash.Sum(nil)
-	return hex.EncodeToString(hash_in_bytes), nil
+	hashInBytes := hash.Sum(nil)
+	return hex.EncodeToString(hashInBytes), nil
 }
 
 func main() {
